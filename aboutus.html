@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: #ff7200;
+  background-color: #ff7200;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #d1d1d1;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us </h1>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="uttam.png" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Uttam Kumar Sahu</h2>
+        <h3>21CSE566</h3>
+        <p class="title">Developer</p>
+    
+        <p><button class="button"><a href="https://www.instagram.com/mr._uttam_sahoo/">Contact </a></button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="suraj.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Suraj Kumar</h2>
+        <h3>21CSE579</h3>
+        <p class="title">Developer</p>
+        
+        <p><button class="button"><a href="https://www.instagram.com/_suraj.kr_/">Contact </a></button></p>     
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="amrit.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Amrit Behra</h2>
+        <h3>21CSE343</h3>
+        <p class="title">Developer</p>
+       
+        <p><button class="button"><a href="https://www.instagram.com/theamrit_22/">Contact </a></button></p>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
